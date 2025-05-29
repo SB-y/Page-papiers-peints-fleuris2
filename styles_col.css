@@ -1,0 +1,217 @@
+html, body {
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+
+section {
+background-image: url(images/fond.jpg);
+background-color: rgba(255, 255, 255, 0.5);
+background-repeat :no-repeat;
+background-size: cover;
+background-position: top;
+margin:0;
+}    
+
+nav {
+background-color: rgba(0, 0, 0, 5);
+align-items: center;
+display: flex;
+justify-content: space-between;
+padding-top :30px;
+padding-bottom :20px;
+padding-left: 40px;
+padding-right: 40px;
+
+.liens{
+a {
+padding: 50px;
+color:white;
+text-decoration: none;
+font-family: "lexend peta", Arial, Helvetica, sans-serif;
+font-size: 11px;
+}
+}
+.material-symbols-outlined {
+color:white;
+font-size : 35px;
+align-self:center;
+}
+}
+
+.bandeau1 {
+margin-top:13%;
+display: flex;
+justify-content: flex-end;
+}
+
+.presentation {
+padding: 60px ;
+padding-right: 80px;
+text-align:right;
+font-family: "lexend peta", Arial, Helvetica, sans-serif;
+font-size: 11px;
+color:white;
+background-color: rgba(38, 51, 17, 0.5);
+width: 1060px;
+}
+
+.bandeau2 {
+margin-top: -2%;
+margin-bottom:3%;
+display: flex;
+}
+
+.produits {
+padding-top: 50px;
+padding-bottom: 20px;
+background-color: rgba(255, 255, 255, 0.5);
+width: 1350px;
+height: 1000px;
+}
+
+#catalogue {
+color:black;
+font-family: lexend peta;
+text-align:center;
+font-size:19px;
+color: rgb(10, 40, 4);
+padding-bottom: 1%;
+}
+
+.produitsTexte {
+display: flex;
+justify-content: space-evenly;
+}
+.produits4 {
+display: flex;
+flex-direction: column;
+width:500px;
+height: 770px;
+overflow: auto;
+}
+
+
+img {
+width: 15em;
+border-radius: 50%;
+border: 3px solid;
+border-color:black;
+}
+
+h4 {
+color:rgb(0, 0, 0);
+font-family: lexend peta;
+font-size: 12px;
+}
+
+#Freesia {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding-bottom: 50px;
+}
+#Kalmia {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding-bottom: 50px;
+}
+#Nerine {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding-bottom: 50px;
+}
+#Wedelia {
+display: flex;
+flex-direction: column;
+align-items: center;  
+text-align: center;
+padding-bottom: 50px;
+}
+
+.btn-add{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+background-color: black;
+color: white;
+padding:10px;
+outline:none;
+border:none;
+}
+
+.btn-ret{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+background-color: black;
+color: white;
+padding:10px;
+outline:none;
+border:none;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    }
+
+span.detailProduit {
+color:black;
+font-family: lexend peta;
+font-size: 11px;
+font-weight: bold;
+padding-top: 10px;
+}
+
+#messagePanierTotal {
+color:black;
+font-family: lexend peta;
+text-align:center;
+font-size:14px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+
+footer {
+margin-bottom: 0;
+background-color: rgba(0, 0, 0, 5);
+padding: 40px;
+text-align: center;
+
+a {
+color:white;
+padding: 60px;
+text-decoration: none;
+font-family: lexend peta;
+font-size: 11px;
+}
+}
+
+
+/* Styles pour le wrapper */
+.wrapper {
+    display: flex;
+}
+
+/* Styles pour la barre latérale (menu) */
+.sidebar {
+    position: fixed; /* Fixe la barre latérale par rapport à la fenêtre du navigateur */
+    bottom: 95px; 
+    right: 0; /* Aligne la barre latérale sur le côté droit */
+    height: 180px; /* La barre latérale prend toute la hauteur de la fenêtre */
+    width: 90px; /* Définissez la largeur de la barre latérale selon vos besoins */
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-evenly;
+}
+.reseaux {
+    width:40px;
+}

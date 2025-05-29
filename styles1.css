@@ -1,0 +1,138 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.ficheproduit1{
+    display:flex;
+    flex-direction:row;
+justify-content: center;
+align-items: center;
+}
+
+#images-produits {
+    width: 400px; 
+    height: 400px; 
+    padding:50px;
+    padding-left:5px;
+}
+
+#img1, #img2 {
+    width: 400px;
+    height: 400px;
+}
+
+#img2 {
+    display: none; 
+}
+
+.material-symbols-outlined {
+    color :grey;
+    font-size: 60px;
+   align-self: flex-end;
+}
+
+
+#texte1{
+    background-color: rgba(135, 132, 121, 0.158);
+    border-radius: 5%;
+    padding :20px;
+    width: 600px;
+    height: 435px;
+}
+
+h1{
+color:black;
+font-family: "lexend peta", Arial, Helvetica, sans-serif;
+font-size: 20px;
+font-weight: bold;
+}
+
+h2{
+    color:black;
+    font-family: "lexend peta", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    }
+
+ h3{
+    color:rgb(102, 94, 94);
+    font-family: "lexend peta", Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-style:italic;
+    }
+
+p{
+    color:black;
+    font-family: "lexend peta", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+ul {
+    color:black;
+    font-family: "lexend peta", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+ol {
+    color:black;
+    font-family: "lexend peta", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+input[type="text"] {
+    width: 155px; 
+    height: 20px; 
+}
+
+.contcal {
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+}
+
+#resultat{
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-left:12px;
+    padding-right: 12px;
+    background-color: black;
+    color: white;
+    outline:none;
+    border:none;
+}
+
+#reset{
+    font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        padding-left:12px;
+        padding-right: 12px;
+        background-color: black;
+        color: white;
+        outline:none;
+        border:none;
+    }
+
+#hauteur{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: white;
+    color: black;
+}
+
+#largeur{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: white;
+    color: black;
+}
+
+h4 {
+    font-family: lexend peta;
+    font-size: 13px;
+    font-weight: bold;
+    color:black;
+    text-align:center;
+    }
+
+

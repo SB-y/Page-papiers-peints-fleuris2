@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche produit 4</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@100..800&family=Cagliostro&family=Fasthand&family=Lexend+Peta:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,600,0,200" />
+
+<link rel="stylesheet" href="styles4.css" />
+
+</head>
+
+<body>
+  
+<div class="ficheproduit4">
+    <span class="material-symbols-outlined"> switch_access_shortcut_add
+    </span>
+    <div id="images-produits">
+        <img src="images/papier4a.jpg" alt="Image 1" id="img1">
+        <img src="images/papier4b.jpg" alt="Image 2" id="img2">
+    </div>
+   
+<div id="texte1">
+    <h1> Papier peint Wedelia</h1> 
+    <h2> 21.99€ / rouleau </h2>
+    <h3> Dimension : 10,05m de longueur et 0,53m de largeur </h3> 
+    <p> Caractéristiques du papier peint intissé :</p>
+    <ul>
+        <li> Rapide à poser </li>
+        <li> Résistant et durable </li>
+        <li> Facilement nettoyable y compris à l'eau savonneuse </li>
+    </ul>
+    <p> Comment trouver le nombre de rouleaux ?</p>
+    <ol> 
+    <li>Calculer le nombre de lés par rouleau : <br> <strong>10/hauteur du mur en m (arrondir à l'inférieur) </strong></li> 
+    <li> Calculer le nombre de lés par longueur du mur : <br> <strong>longueur du mur en m/0,5 </strong></li>
+    <li> Calculer le nombre de rouleaux : <br> <strong> nombre de lés par longueur du mur/nombre de lés par rouleau (arrondir au supérieur) </strong></li>
+</ol>
+    <p> Utilisez notre calculateur :</p>
+<div class="contcal">
+<input type="text" id="hauteur" placeholder="Hauteur de votre mur en m">
+<input type="text" id="largeur" placeholder="Largeur de votre mur en m">
+<button id="resultat"> RESULTAT</button>
+<button id="reset"> EFFACER</button>
+</div>
+<h4 id="messageResult"></h4>
+
+</div>
+
+<script src="script3.js"></script>
+</body>
+</html>

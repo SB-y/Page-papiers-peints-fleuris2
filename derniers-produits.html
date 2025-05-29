@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derniers produits achetés</title>
+</head>
+
+<body>
+    <ul id="liste-derniers-produits"></ul>
+    <h5 id="messagePanierTotal"></h5>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Effacer le contenu du panier en supprimant l'entrée 'panier' du stockage local
+            localStorage.removeItem('panier');
+
+            // Déclaration de la variable produits avec les quantités mises à jour
+            let produits = [
+            { nom: "Freesia", prix: 18.99, quantite: 0, total: 0 },
+            { nom: "Kalmia", prix: 19.99, quantite: 0, total: 0 },
+            { nom: "Nerine", prix: 20.99, quantite: 0, total: 0 },
+            { nom: "Wedelia", prix: 21.99, quantite: 0, total: 0 }
+            ];
+            
+            // Récupérer les données du panier depuis l'URL
+            const params = new URLSearchParams(window.location.search);
+            const panierData = params.get('panier');
+            const panier = JSON.parse(panierData) || [];
+
+            // Mettre à jour les quantités dans le tableau produits
+            panier.forEach(({ nom, quantite }) => {
+            const produitIndex = produits.findIndex(produit => produit.nom === nom);
+            if (produitIndex !== -1) {
+                produits[produitIndex].quantite = quantite;
+                produits[produitIndex].total = quantite * produits[produitIndex].prix;
+                }
+            });
+
+            // Sélectionner l'élément UL où nous afficherons les produits
+            let listeDerniersProduits = document.getElementById('liste-derniers-produits');
+
+            // Effacer le contenu actuel de la liste des produits
+            listeDerniersProduits.innerHTML = '';
+
+            // Créer un objet pour stocker les dernières valeurs de chaque produit
+            let dernierProduitParNom = {};
+
+            // Parcourir les produits du panier pour obtenir les dernières valeurs de chaque produit
+            panier.forEach(produit => {
+                // Mettre à jour les dernières valeurs pour chaque produit
+                dernierProduitParNom[produit.nom] = produit;
+            });
+
+            // Parcourir les dernières valeurs de chaque produit et les ajouter à la liste
+            Object.values(dernierProduitParNom).forEach(produit => {
+                // Créer un élément LI pour le produit et l'ajouter à la liste
+                let itemProduit = document.createElement('li');
+                itemProduit.textContent = "Nom : " + produit.nom + " Quantité : " + produit.quantite + " Coût : " + produit.total.toFixed(2);
+                listeDerniersProduits.appendChild(itemProduit);
+            });
+
+  // Calculer le total du panier
+  let totalPanier=0;
+  let i;
+  for (i=0; i<produits.length;i++) {
+    totalPanier += produits[i].total;
+}
+            // Afficher le total du panier
+            document.getElementById("messagePanierTotal").innerText = "Votre commande totale est de " + totalPanier.toFixed(2) + " €";
+        });
+    </script>
+</body>
+</html>
